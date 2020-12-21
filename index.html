@@ -23,21 +23,39 @@
                 <img id='personal-photo' src='halfface.png' alt='photo-of-applicant'>
             </div>
             <div id='grid'>
-                <div class='box' id='who'><h3>Who am I?</h3><img src='add.png'></div>
-                <div class='box' id='what'>
-                    <div class='what'>What do I have to offer?</div>
-                </div>  
-                <div class='box' id='why'>
-                    <div class='why'>
-                        <h4>Why am I applying?</h4>
-                        <br>
-                        <p>Why coding? I like coding, I enjoy the puzzles and the satisfaction of the gotcha moments, I also love the fact that I can build something from scratch! In the longer term, I think it’s an amazing skill that could provide someone the skills to earn a living. I think that being involved in projects that teach code in the future would give me  an enormous sense of purpose. <br>
-                        <br>Why Founders & Coders? I really like coding, clearly, and I’m quite happy with the progress I’m making through self-learning. So I’d be really excited to join a community of coders because I think it will be more fun as well as a really important experience to solve problems together. I think Founders & Coders as an organisation is a good match for me… 
+                <div>
+                    <label for='toggle' class='checkbox'>Who am I? +</label>
+                    <input class='box-collapsible' id='toggle' type='checkbox'>
+                    <div class="collapsible-content">
+                        <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                         </p>
-                    </div> 
+                    </div>
+                </div>
+            
+                <div>
+                    <label for='toggle-what' class='checkbox'>What do I have to offer? +</label>
+                    <input class='box-collapsible' id='toggle-what' type='checkbox'>
+                    <div class="collapsible-content">
+                        <p>My logic skills are good and as I started learning code with C, I feel I have a strong foundation in the basics. The value of that foundation was made really clear to me as I began to work through the prerequisites. I felt that I knew how to approach the kata challenges without google!
+                        <br><br>I have very good interpersonal skills, ie teamwork and communication. These skills are often overlooked, but I think they are a critical aspect to any good productive team and in particular, within peer-led teaching. I enjoy working with people, I’m curious to get to know them and work with them. I think teams need plenty of people with empathy, as it helps to create feelings of emotional safety in groups and a more free flowing and productive discussion.                        </p>
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for='toggle-why' class='checkbox'>Why am I applying? +</label>
+                    <input class='box-collapsible' id='toggle-why' type='checkbox'>
+                    <div class="collapsible-content">
+                        <p>Why coding? I like coding, I enjoy the puzzles and the satisfaction of the gotcha moments, I also love the fact that I can build something from scratch! In the longer term, I think it’s an amazing skill that could provide someone the skills to earn a living. I think that being involved in projects that teach code in the future would give me  an enormous sense of purpose. <br>
+                            <br>Why Founders & Coders? I really like coding, clearly, and I’m quite happy with the progress I’m making through self-learning. So I’d be really excited to join a community of coders because I think it will be more fun as well as a really important experience to solve problems together. I think Founders & Coders as an organisation is a good match for me… 
+                            </p>
+                    </div>
+                </div>
             </div>
         </div>
+        <button id='btn'>Next</button>
     </section>
+    
 </body>
     <script src='script.js'></script>
 </html>

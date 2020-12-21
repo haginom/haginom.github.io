@@ -12,3 +12,9 @@ btn.addEventListener('click', () => {
     const other = document.getElementById('other')
     other.style.display = "block";
   }
+
+
+
+for (let i=0; i<4; i++){
+    
+}
