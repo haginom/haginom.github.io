@@ -10,25 +10,23 @@ second.style.display= "none";
 third.style.display= "none";
 fourth.style.display = "none";
 
-const btnOne = document.querySelector('#btn-one');
-const btnTwo = document.querySelector('#btn-two');
-const btnThree = document.querySelector('#btn-three');
-const btnFour = document.querySelector('#btn-four')
+const btns = document.querySelectorAll('#btn');
+const bbtns = document.querySelectorAll('#btn-back')
 
-btnOne.addEventListener('click', () => {
-    changeSection();
-  });
-btnTwo.addEventListener('click', () => {
-    changeSection();
-});  
-btnThree.addEventListener('click', () => {
-    changeSection();
-});  
-btnFour.addEventListener('click', () => {
-    changeSection();
-});  
 
-function changeSection(){
+for (let i = 0; i < btns.length; i++) {
+	btns[i].addEventListener('click', function () {
+		goForward();
+	})
+};
+
+for (let i = 0; i < bbtns.length; i++) {
+	bbtns[i].addEventListener('click', function () {
+		goBackward();
+	})
+};
+
+function goForward(){
     for (let i=0; i<sections.length; i++){
         if (i < sections.length-1){
             if (sections[i].style.display != "none"){
@@ -45,4 +43,21 @@ function changeSection(){
         }
     }
   };
+
+function goBackward(){
+    for (let i = 0; i < sections.length; i++){
+        if (i > 1){
+            if (sections[i].style.display != "none"){
+                sections[i].style.display = "none";
+                sections[i-1].style.display = "block";
+                return
+            }
+        } else 
+            if (sections[i].style.display != "none"){
+                sections[i].style.display = "none";
+                sections[i-1].style.display = "flex";
+                return
+            }
+    }
+};
 

@@ -110,21 +110,16 @@ input[type='checkbox'] {
 }
 
 
-/* next-button */
-#btn-two{
+/* buttons */
+.buttons{
     position: absolute;
     bottom: 5px;
     right: 5px;
-    width: 15vh;
-    height: 5vh;
     font-family: monospace, arial;
 }
 
-#btn-three{
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
+.buttons button{
     width: 15vh;
     height: 5vh;
-    font-family: monospace, arial;
 }
+
