@@ -5,26 +5,26 @@ const fourth = document.getElementById('fourth')
 
 const sections = [intro, second, third, fourth]
 
-intro.style.display = "flex";
+intro.style.display = "none";
 second.style.display= "none";
-third.style.display= "none";
+third.style.display= "block";
 fourth.style.display = "none";
 
 const btns = document.querySelectorAll('#btn');
 const bbtns = document.querySelectorAll('#btn-back')
 
 
-for (let i = 0; i < btns.length; i++) {
-	btns[i].addEventListener('click', function () {
-		goForward();
-	})
-};
+// for (let i = 0; i < btns.length; i++) {
+// 	btns[i].addEventListener('click', function () {
+// 		goForward();
+// 	})
+// };
 
-for (let i = 0; i < bbtns.length; i++) {
-	bbtns[i].addEventListener('click', function () {
-		goBackward();
-	})
-};
+// for (let i = 0; i < bbtns.length; i++) {
+// 	bbtns[i].addEventListener('click', function () {
+// 		goBackward();
+// 	})
+// };
 
 function goForward(){
     for (let i=0; i<sections.length; i++){
