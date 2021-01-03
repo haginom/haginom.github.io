@@ -17,20 +17,23 @@ body{
     bottom: 5px;
     right: 5px;
     font-family: monospace, arial;
+    
+
 }
 
 .buttons button{
     width: 15vh;
-    height: 5vh;
     cursor: pointer;
+    border-radius: 8px;
+    font-weight: 300;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: yellowgreen 2px;
+    font-size: 1.3rem;
+    margin: 0px 20px 10px 20px;
+    padding: 5px 10px 5px 10px;
 }
 
-.arrow-left{
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-}
 /* opening section */
 
 #first{
@@ -128,6 +131,12 @@ input[type='checkbox'] {
 /* why checkbox */
 
 #toggle-why:checked ~ .collapsible-content{
+    max-height: 100vh;
+}
+
+/* why fc checkbox */
+
+#toggle-why-fc:checked ~ .collapsible-content{
     max-height: 100vh;
 }
 
@@ -234,4 +243,114 @@ input[type='checkbox'] {
 
  #fourth{
      background-color: teal;
+     height: 100vh;
  }
+
+ #fourth-grid{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0,5fr 1fr 0.5fr 0,5fr 1fr;
+    grid-template-rows: 20% 0.5fr 0.5fr auto auto;
+    grid-gap: 15px 15px;
+ }
+
+ .empty-row{
+    grid-column-start: 1;
+    grid-column-end: span 7; 
+    height: 10vh;
+}
+
+ #thank-you{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    font-style: italic;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+ }
+
+ #contact-me{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    font-style:italic;
+    text-align: center;
+}
+
+ #profile-pic-container{
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 3;
+    grid-column-end: span 3;
+    text-align: center;
+
+ }
+ #profile-pic{
+    background-color:rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    max-width: 250px;
+ }
+
+.website-links-container{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    text-align:center;
+    display: flex;
+    flex-direction:column;
+}
+
+.website-links{
+    margin-top:5px;
+}
+
+#fcc-logo{
+    height:1.5vw;
+    margin-bottom: 10px;
+}
+#github-logo{
+    height: 2.5vw;
+}
+
+
+
+ #diversity-statement{
+     grid-row-start: 1;
+     grid-column-start: 7;
+     grid-column-end: span 3;
+ }
+
+
+
+ .speech-bubble{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.2vw;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+.speech-bubble:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+	left: 50%;
+	width: 0;
+    height: 0;
+    border: 20px solid transparent;
+	border-top-color: #00aabb;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
+#diversity-statement-question{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    
+}
