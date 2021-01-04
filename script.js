@@ -30,6 +30,10 @@ bbtns[i].addEventListener('click', function () {
 
 function goForward(){
     for (let i=0; i<sections.length; i++){
+        if (document.getElementById('winner-container')){
+            playAgain();
+        };
+        
         if (i < sections.length-1){
             if (sections[i].style.display != "none"){
                 sections[i+1].style.display = "block";
@@ -54,6 +58,10 @@ function goBackward(){
                 return
             }
         } else 
+            computerScore = 0;
+            playerScore = 0;
+            rounds = 0;
+            playAgain();
             if (sections[i].style.display != "none"){
                 sections[i].style.display = "none";
                 sections[i-1].style.display = "block";
@@ -61,8 +69,6 @@ function goBackward(){
             }
     }
 };
-
-
 
 //rock-paper-scissors-game
 
@@ -139,6 +145,8 @@ function updateRound(){
 
 //Update the score in the table 
 function updateTable() {
+    const myObj = document.getElementById("theround");
+    myObj.innerHTML = "Round " + rounds;
     const pscore = document.getElementById("player-score"); 
     pscore.innerHTML = playerScore;
     const sscore = document.getElementById("saki-score");
@@ -146,9 +154,11 @@ function updateTable() {
 }
 
 function playAgain() {
-    //remove popup
-    const deletePopUp = document.getElementById('winner-container')
-    deletePopUp.remove();
+    //remove popup if exists!
+    if (document.getElementById('winner-container')){
+        const deletePopUp = document.getElementById('winner-container')
+        deletePopUp.remove();
+    }
     //reset scores
     updateTable();
     //reset button background
