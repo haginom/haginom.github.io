@@ -35,16 +35,14 @@ body{
 /* opening section */
 
 #first{
-    height: 100vh;
-    width: 100vw;
-    padding: 0.5em;
-    background-color:purple;;
+    background-color:purple;
+    padding: 1em;
 }
 
 #first header{
     background-color: rgba(255, 255, 255, 0.3);
-    margin: 1em 3em 3em 1em;
-    padding: 0.5em 0.5em 0.5em 05em;
+    margin: 1em 3em 1em 3em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
     color: #FDF5E6;
     text-align: center;
     border-radius: 8px;
@@ -499,6 +497,11 @@ input[type='checkbox'] {
         height: fit-content;
         width: fit-content;
     }
+
+    #first header{
+        margin: 1em 1em 1em 1em;
+    }
+
     #resultsContainer{
         position: relative;
     }
