@@ -56,9 +56,14 @@ body{
     font-weight: normal;
 }
 
-#first header p{
-    padding-top: 1em;
-    font-size: 1.3em;
+#first header p:first-of-type{
+    padding-top: 0.5em;
+    font-size: 1.5em;
+}
+#first header p:last-of-type{    
+    padding-top: 0.3em;
+    font-size: 1em;
+    text-align:right;
 }
 
 /*  icons general*/
