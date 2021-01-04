@@ -8,19 +8,72 @@
 </head>
 <body>
     <!-- Opening Section-->
-    <section id='first'>
-        <div id='welcome'>
-            <p id='hello'>Hello!</p>
-            <p>My name is Saki. Welcome to my Founders & Coders application. I made this website to show you who I am and to showcase some of the technical skills I've picked up along the way! Enjoy!</p>
-            <button id='btn'>Click Here</button>
+<section id='first'>
+    <header>
+        <h1>Welcome to Saki's Founders & Coders Application.</h1>
+        <p>Win a game of Rock, Paper, Scissors to enter!</p>
+    </header>
+
+    <div id="resultsContainer">
+        <table id="scores">
+            <tr>
+                <th id="theround" colspan="2">Round 0</th>
+            </tr>
+            <tr>
+                <th class="left">Your Score</th>
+                <th class="right">Saki's Score</th>
+            </tr>
+            <tr>
+                <th id="player-score" class="left">0</th>
+                <th id ="saki-score" class="right">0</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class ='icons'>
+         <div class=playersChoice>
+            <p>Choose your hand:<p>
+            <div class="container">
+                <button><img class="iconImage" id="rock" alt="image-of-rock" src="images/icons8-hand-rock-96.png"></button>
+            </div>
+            <div class="container">
+                <button><img class="iconImage" id="paper" src="images/icons8-hand-96.png"></button>
+            </div>
+            <div class="container">
+                
+                <button> <img class="iconImage" id="scissors" src="images/icon8-scissors-reverse.png"></button>
+            </div>
         </div>
-    </section>
+    <div class=computersChoice>
+        <p>Saki's Hand:<p>
+        <div class="container">
+            <div class="saki-icon">
+                <img class="compImage" id="rock" alt="image-of-rock" src="images/icons-rock-reverse.png">
+            </div>
+        </div>
+            <div class="container">
+                <div class="saki-icon">
+                    <img class="compImage" id="paper" src="images/icon8-comphand.png">
+                </div>
+        </div>
+        <div class="container">
+            <div class="saki-icon">
+                <img class="compImage" id="scissors" src="images/icons8-hand-scissors-96.png">
+            </div>
+        </div>
+    </div>
+</div>      
+
+        
+    <button id='skip-button' class='btn'>Skip Game</button>
+    
+</section>
 
     <!-- Q & A Section -->
     <section id='second'>
         <div id="containers">
             <div id="image">
-                <img id='personal-photo' src='halfface.png' alt='photo-of-applicant'>
+                <img id='personal-photo' src='images/halfface.png' alt='photo-of-applicant'>
             </div>
             <div id='grid'>
                 <div>
@@ -80,7 +133,7 @@
                         </p>
                    </div>
                    <div>
-                    <label for='toggle-why-fc' class='checkbox'>Why Foundes & Coders? +</label>
+                    <label for='toggle-why-fc' class='checkbox'>Why Founders & Coders? +</label>
                     <input class='box-collapsible' id='toggle-why-fc' type='checkbox'>
                     <div class="collapsible-content">
                         <p>For me, Founders & Coders is not simply an opportunity to learn web development, it is a chance to be part of a coding community. <br><br>
@@ -93,8 +146,8 @@
             
         </div>
         <div class="buttons">
-            <button id='btn-back'>Back</button>
-            <button id='btn'>Next</button>
+            <button class='btn-back'>Back</button>
+            <button class='btn'>Next</button>
         </div>
     </section>
 
@@ -138,8 +191,8 @@
             </ul>
          </div>
         <div class="buttons">
-            <button id='btn-back'>Back</button>
-            <button id='btn'>Next</button>
+            <button class='btn-back'>Back</button>
+            <button class='btn'>Next</button>
         </div>
      </section>
     
@@ -148,7 +201,7 @@
         <div id="fourth-grid">
             <div class='empty-row'></div>
             <div id='profile-pic-container'>
-                <img id='profile-pic' src='Humaans-cropped.png'>
+                <img id='profile-pic' src='images/Humaans-cropped.png'>
             </div>
             <div class='empty-row'></div>
             <div id="thank-you">
@@ -162,16 +215,16 @@
 
             <div class='website-links-container'>
                 <a class='website-links' href="https://www.freecodecamp.org/haginom">
-                    <img id='fcc-logo' src='fcc_secondary_large.svg' alt='link-to-sakis-freecodecamp-website'>
+                    <img id='fcc-logo' src='images/fcc_secondary_large.svg' alt='link-to-sakis-freecodecamp-website'>
                     </a>
                 <a class='website-links' href="https://github.com/haginom">
-                    <img id='github-logo' src='GitHub-logo.png' alt='link-to-sakis-github-account'>
+                    <img id='github-logo' src='images/GitHub-logo.png' alt='link-to-sakis-github-account'>
                     </a>
             </div>
 
             <div class="buttons">
-                <button id='btn-back'>Back</button>
-                <button id='btn'>Home</button>
+                <button class='btn-back'>Back</button>
+                <button class='btn'>Home</button>
             </div>
         </div>
     </section>
