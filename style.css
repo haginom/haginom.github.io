@@ -293,7 +293,7 @@ button:hover{
     cursor: pointer;
     border-radius: 7px;
     transition: all 0.25s ease-out;
-    border: black solid 2px;
+    border: #A77B0E solid 3px;
     margin: 2px;
 }
 
@@ -471,7 +471,8 @@ input[type='checkbox'] {
     font-size: 3vw;
     color: white;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 25px;
+    line-height: 3vw;
  }
 
  #contact-me{
@@ -493,7 +494,9 @@ input[type='checkbox'] {
  #profile-pic{
     background-color:rgba(255, 255, 255, 0.3);
     border-radius: 50%;
-    max-width: 250px;
+    max-height: 100%;
+    max-width: auto;
+    height: 30vh;
  }
 
 .website-links-container{
@@ -510,48 +513,17 @@ input[type='checkbox'] {
 }
 
 #fcc-logo{
-    height:1.5vw;
+    height:1.5vh;
     margin-bottom: 10px;
 }
 #github-logo{
-    height: 2.5vw;
+    height: 2.5vh;
 }
 
- #diversity-statement{
-     grid-row-start: 1;
-     grid-column-start: 7;
-     grid-column-end: span 3;
- }
+@media only screen and (max-width: 860px) {
+    #thank-you{
+        font-size: 6vw;
+        line-height: 6vw;
+    }
 
- .speech-bubble{
-    background-color: white;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 1.2vw;
-    color: black;
-    text-align: center;
-    position: relative;
 }
-
-.speech-bubble:after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-	left: 50%;
-	width: 0;
-    height: 0;
-    border: 20px solid transparent;
-	border-top-color: #00aabb;
-	border-bottom: 0;
-	border-right: 0;
-	margin-left: -10px;
-	margin-bottom: -20px;
-}
-
-#diversity-statement-question{
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-column-end: span 3;
-    
-}
-
