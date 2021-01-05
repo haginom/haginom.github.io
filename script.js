@@ -7,8 +7,8 @@ const fourth = document.getElementById('fourth')
 
 const sections = [intro, second, third, fourth]
 
-intro.style.display = "block";
-second.style.display= "none";
+intro.style.display = "none";
+second.style.display= "block";
 third.style.display= "none";
 fourth.style.display = "none";
 
