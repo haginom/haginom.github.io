@@ -13,9 +13,13 @@ body{
 
 /* buttons */
 .buttons{
-    position: fixed;
-    bottom: 2vh;
-    right: 2vw;
+    width: 50vw;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
     font-family: monospace, arial;
 }
 
@@ -272,7 +276,6 @@ button:hover{
 }
 
 #containers{
-    
     display: flex;
     align-items: center;
 }
@@ -344,6 +347,10 @@ input[type='checkbox'] {
         height: 100vh;
     }
 
+    #qa-buttons{
+        white-space: nowrap;
+        margin-left: -25vw;
+    }
 }
 /* MY JOURNEY SECTION */
 
@@ -443,6 +450,13 @@ input[type='checkbox'] {
     top: 10px;
 }
 
+@media only screen and (max-width: 860px) {
+    #journey-buttons{
+        position: static;
+        margin: 0 auto;
+    }
+}
+
  /* FOURTH SECTION */
 
  #fourth{
@@ -524,6 +538,12 @@ input[type='checkbox'] {
     #thank-you{
         font-size: 6vw;
         line-height: 6vw;
+    }
+
+    #contact-buttons{
+        display: flex;
+        justify-content: space-evenly
+
     }
 
 }
