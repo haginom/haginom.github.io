@@ -37,6 +37,7 @@ body{
 #first{
     background-color:purple;
     padding: 1em;
+    height: 100vh;
 }
 
 #first header{
@@ -450,15 +451,11 @@ input[type='checkbox'] {
     height: 2.5vw;
 }
 
-
-
  #diversity-statement{
      grid-row-start: 1;
      grid-column-start: 7;
      grid-column-end: span 3;
  }
-
-
 
  .speech-bubble{
     background-color: white;
