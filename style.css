@@ -260,6 +260,8 @@ button:hover{
 
 #second{
     background-color: #F5BD1F;
+    min-height: 100vh;
+    max-height: fit-content;
 }
 
 #personal-photo{
@@ -270,6 +272,7 @@ button:hover{
 }
 
 #containers{
+    
     display: flex;
     align-items: center;
 }
@@ -277,9 +280,11 @@ button:hover{
 /* checkboxes */
 
 .checkbox {
+    padding-top: 2vh;
+    margin: 2vh 2vw 2vh 2vh;
     display: block;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 2.5vh;
     text-transform: uppercase;
     text-align: center;
     padding: 1rem;
@@ -304,7 +309,7 @@ input[type='checkbox'] {
 }
 
 .collapsible-content p{
-    font-size: 2.5vh;
+    font-size: 1.5vh;
 }
 
 /* who checkbox */
@@ -331,7 +336,15 @@ input[type='checkbox'] {
     max-height: 100vh;
 }
 
+@media only screen and (max-width: 860px) {
+    #personal-image{
+        display: none;
+    }
+    #containers{
+        height: 100vh;
+    }
 
+}
 /* MY JOURNEY SECTION */
 
 #third{
