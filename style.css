@@ -13,7 +13,7 @@ body{
 
 /* buttons */
 .buttons{
-    position: absolute;
+    position: fixed;
     left: 50%;
     width: 35vw; 
     bottom: 2.5vh;
@@ -286,6 +286,10 @@ button:hover{
     align-items: center;
 }
 
+.box-collapsible{
+    overflow: visible;
+}
+
 /* checkboxes */
 
 .checkbox {
@@ -356,6 +360,7 @@ input[type='checkbox'] {
     }
 
     #qa-buttons{
+        position: relative;
         white-space: nowrap;
     }
     .btn-back{
