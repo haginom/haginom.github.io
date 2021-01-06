@@ -1,3 +1,4 @@
+
 //changing between sections 
 
 const intro = document.getElementById('first')
