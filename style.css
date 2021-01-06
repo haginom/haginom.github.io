@@ -319,6 +319,7 @@ input[type='checkbox'] {
 
 .collapsible-content p{
     font-size: 2vh;
+    background-color: #F5BD1F;
 }
 
 /* who checkbox */
@@ -345,10 +346,6 @@ input[type='checkbox'] {
     max-height: 100vh;
 }
 
-#qa-buttons{
-    white-space: nowrap;
-    margin-left: -7vw;
-}
 
 @media only screen and (max-width: 860px) {
     #personal-image{
@@ -472,10 +469,7 @@ input[type='checkbox'] {
     font-size: 1.2vw;
 }
 
-#journey-buttons{
-    position: relative;
 
-}
 @media only screen and (max-width: 1200px){
     .container::after{
         right: -11.5%;
