@@ -14,12 +14,13 @@ body{
 /* buttons */
 .buttons{
     position: absolute;
-    left: 65%;
+    left: 50%;
     width: 35vw; 
-    bottom: 5vh;
+    bottom: 2.5vh;
     display: flex;
     justify-content: space-evenly;
-
+    padding-top: 1vh;
+    margin-left: -17.5vw;
 }
 
 .buttons button{
@@ -29,7 +30,7 @@ body{
     font-weight: 300;
     background-color: rgba(255, 255, 255, 0.3);
     color: white;
-    font-size: 1.3rem;
+    font-size: 2vw;
     padding: 5px 10px 5px 10px;
     box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(255, 255, 255, 0.6);
     letter-spacing: 0.1em;
@@ -344,6 +345,11 @@ input[type='checkbox'] {
     max-height: 100vh;
 }
 
+#qa-buttons{
+    white-space: nowrap;
+    margin-left: -7vw;
+}
+
 @media only screen and (max-width: 860px) {
     #personal-image{
         display: none;
@@ -354,7 +360,6 @@ input[type='checkbox'] {
 
     #qa-buttons{
         white-space: nowrap;
-        margin-left: -30vw;
     }
     .btn-back{
         margin-right: 4vw;
@@ -617,21 +622,17 @@ input[type='checkbox'] {
 }
 
 #fcc-logo{
-    height:1.5vh;
+    height:2.5vh;
     margin-bottom: 10px;
 }
 #github-logo{
-    height: 2.5vh;
+    height: 4vh;
 }
 
 @media only screen and (max-width: 860px) {
     #thank-you{
-        font-size: 6vw;
-        line-height: 6vw;
+        font-size: 7vw;
+        line-height: 7vw;
+        margin-top: 10px;
     }
-
-    #contact-buttons{
-        left: 33%;
-    }
-
 }
