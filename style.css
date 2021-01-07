@@ -74,9 +74,9 @@ button:focus{
     font-size: 2vw;
 }
 #first header p:last-of-type{    
+    padding-top: 0.5em;
     font-size: 1vw;
     line-height: 2vw;
-    text-align:right;
 }
 
 /* Scores */
@@ -224,7 +224,19 @@ button:hover{
   
     #first header h1{
         white-space: normal;
-        font-size: 4vh;;
+        font-size: 3vh;;
+    }
+
+    #first header p:first-of-type {
+        padding-top: 0.5em;
+        font-size: 3vw;
+    }
+
+    #first header p:last-of-type {
+        padding-top: 0.5em;
+        line-height: 3vw;
+        font-size: 2.5vw;
+        
     }
 
     #resultsContainer{
