@@ -290,6 +290,10 @@ button:hover{
     overflow: visible;
 }
 
+#second-grid{
+    padding-bottom: 10vh;
+}
+
 /* checkboxes */
 
 .checkbox {
