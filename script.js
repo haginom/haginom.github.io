@@ -75,22 +75,17 @@ function goBackward(){
 
 const checkboxes = document.querySelectorAll('.box-collapsible')
 
-checkboxes.forEach((checkbox) => {
-    checkbox.addEventListener('change', function(){
-        for (let i = 0; i < checkboxes.length; i++){
-            checkboxes.checked = false;
-            if (checkboxes[i].checked){
-            for (let j = 0; j < checkboxes.length; j++){
-                if (j != i){
-                    checkboxes[j].checked = false;
-                    checkboxes[i].checked = true;
+checkboxes.forEach((checkbox) => {  
+    checkbox.addEventListener('change', function(e){
+        for (let i = 0; i < checkboxes.length; i++){ 
+            if(checkboxes[i].checked){
+                if (e.target != checkboxes[i]){
+                    checkboxes[i].checked = false;
                 }
-            }  
-            }
+            }     
         }
     })
 })
-
 
 
 //rock-paper-scissors-game
